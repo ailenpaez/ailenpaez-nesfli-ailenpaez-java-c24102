@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   form.addEventListener("submit", function (event) {
     if (!emailInput.value || !passwordInput.value) {
-      event.preventDefault(); // Evita que el formulario se envie
+      event.preventDefault(); 
       alert("Por favor, completa todos los campos.");
     } else if (passwordInput.value.length < 6) {
       event.preventDefault();
