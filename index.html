@@ -31,10 +31,17 @@
           <li class="listaItem">
             <a class="linkNav" href="./pages/register.html">Registrarse</a>
           </li>
+
           <li class="listaItem">
             <a class="linkNav iniciarSesion" href="./pages/login.html"
               >Iniciar Sesión</a
             >
+          </li>
+
+          <li>
+            <a class="botonApi" href="./pages/apiView.html">
+              Conexión con API
+            </a>
           </li>
         </ul>
       </nav>
@@ -387,18 +394,17 @@
     </script>
 
     <script>
-      document.querySelector('.buscadorPeliculas').addEventListener('submit', function(event) {
-        event.preventDefault(); 
-        const inputBuscador = document.querySelector('.inputBuscador');
-        buscarPeliculas(inputBuscador.value);
-      });
+      document
+        .querySelector(".buscadorPeliculas")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          const inputBuscador = document.querySelector(".inputBuscador");
+          buscarPeliculas(inputBuscador.value);
+        });
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
-
-    <script src="./js/handleMovies.js"></script>
-
   </body>
 </html>
